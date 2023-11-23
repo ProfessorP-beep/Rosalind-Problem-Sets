@@ -10,4 +10,15 @@ rosalind_dna <- 'CTGGTACTTCTAAATAGTGTAGTCTGAGGTTGAGCGTAGGGTCGTAGTGCTTACGCTACCAAT
 table(strsplit(rosalind_dna, ''))
 
 #### Transcribing DNA into RNA ####
-# test test test
+# An RNA string is a string formed from the alphabet containing 'A', 'C', 'G', and 'U'.
+
+#Given a DNA string t
+# corresponding to a coding strand, its transcribed RNA string u
+# is formed by replacing all occurrences of 'T' in t
+# with 'U' in u Given: A DNA string t
+# having length at most 1000 nucleotides.
+# Return: The transcribed RNA string of t
+
+t <- readLines('rosalind_rna.txt') #load in the txt file as a string assigned ot t
+rna_output_u <- gsub('T', 'U', t) #use gsub to replace every occurence of T with U to translate dna to rna for problem
+rna_output_u #check output
