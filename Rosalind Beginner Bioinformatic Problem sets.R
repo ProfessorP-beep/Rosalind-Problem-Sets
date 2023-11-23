@@ -10,3 +10,4 @@ rosalind_dna <- 'CTGGTACTTCTAAATAGTGTAGTCTGAGGTTGAGCGTAGGGTCGTAGTGCTTACGCTACCAAT
 table(strsplit(rosalind_dna, ''))
 
 #### Transcribing DNA into RNA ####
+#### test
