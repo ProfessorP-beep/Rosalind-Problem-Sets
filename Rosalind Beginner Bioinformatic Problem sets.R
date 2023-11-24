@@ -1,9 +1,11 @@
 #This series of scripts is to practice bioinformatics
 ##Using the problem sets from Rosalind.info/problems
-##
+
+#Load Libraries
 library(stringr)
 library(stringi)
-#example
+
+#example - how do we count the number of ATCGs in a sequence?
 sample_dataset_string <- 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
 table(strsplit(sample_dataset_string, ''))
 
